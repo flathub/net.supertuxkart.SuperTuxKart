@@ -6,7 +6,7 @@ diff -up fribidi/configure.ac.autoxxx fribidi/configure.ac
  changequote(,)dnl
  if test "x$GCC" = "xyes"; then
 -  CFLAGS="$CFLAGS -Wall -ansi "
-+  CFLAGS="$CFLAGS -ansi -Wno-deprecated-declarations"
++  CFLAGS="$CFLAGS -ansi "
  fi
  changequote([,])dnl
 
