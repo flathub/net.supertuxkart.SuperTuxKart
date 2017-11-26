@@ -9,7 +9,7 @@
     "command": "supertuxkart",
     "finish-args": ["--share=ipc", "--socket=x11", "--socket=pulseaudio", "--share=network", "--device=dri"],
     "build-options" : {
-        "cflags": "-O2 -g",
+        "cflags": "-O2",
         "cxxflags": "-O2 -g",
         "env": {
             "V": "1"
@@ -23,13 +23,21 @@
     "modules": [
         {
             "name": "fribidi",
-            "config-opts": [],
+            "config-opts": ["--disable-dependency-tracking"],
             "cleanup": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://fribidi.org/download/fribidi-0.19.7.tar.bz2",
-                    "sha256": "08222a6212bbc2276a2d55c3bf370109ae4a35b689acbc66571ad2a670595a8e"
+                    "url": "https://github.com/fribidi/fribidi/archive/0.19.7.tar.gz",
+                    "sha256": "3fc96fa9473bd31dcb5500bdf1aa78b337ba13eb8c301e7c28923fea982453a8"
+                },
+                {
+                    "type": "patch",
+                    "path": "fribidi-skip-docs.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "fribidi-ignore-warnings.patch"
                 }
             ]
         },
