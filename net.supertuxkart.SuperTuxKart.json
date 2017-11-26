@@ -34,10 +34,6 @@
                 {
                     "type": "patch",
                     "path": "fribidi-skip-docs.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "fribidi-ignore-warnings.patch"
                 }
             ]
         },
