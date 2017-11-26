@@ -44,6 +44,7 @@
         {
             "name": "libopenglrecorder",
             "buildsystem": "cmake",
+            "config-opts": ["-DCMAKE_INSTALL_LIBDIR:PATH=/app/lib"],
             "sources": [
                 {
                     "type": "archive",
