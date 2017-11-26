@@ -44,7 +44,7 @@
         {
             "name": "supertuxkart",
             "buildsystem": "cmake",
-            "config-opts": ["-DUSE_WIIUSE=0"],
+            "config-opts": ["-DUSE_WIIUSE=0", "-DBUILD_RECORDER=0"],
             "sources": [
                 {
                     "type": "archive",
