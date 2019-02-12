@@ -1,7 +1,7 @@
 {
     "app-id": "net.supertuxkart.SuperTuxKart",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "1.6",
+    "runtime-version": "18.08",
     "sdk": "org.freedesktop.Sdk",
     "rename-desktop-file": "supertuxkart.desktop",
     "rename-appdata-file": "supertuxkart.appdata.xml",
