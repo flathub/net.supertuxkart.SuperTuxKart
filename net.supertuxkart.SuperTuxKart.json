@@ -1,7 +1,7 @@
 {
     "app-id": "net.supertuxkart.SuperTuxKart",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "1.6",
+    "runtime-version": "18.08",
     "sdk": "org.freedesktop.Sdk",
     "rename-desktop-file": "supertuxkart.desktop",
     "rename-appdata-file": "supertuxkart.appdata.xml",
@@ -22,22 +22,6 @@
                 "*.la", "*.a"],
     "modules": [
         {
-            "name": "fribidi",
-            "config-opts": ["--disable-dependency-tracking"],
-            "cleanup": [ "/bin" ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/fribidi/fribidi/archive/0.19.7.tar.gz",
-                    "sha256": "3fc96fa9473bd31dcb5500bdf1aa78b337ba13eb8c301e7c28923fea982453a8"
-                },
-                {
-                    "type": "patch",
-                    "path": "fribidi-skip-docs.patch"
-                }
-            ]
-        },
-        {
             "name": "libopenglrecorder",
             "buildsystem": "cmake",
             "config-opts": ["-DCMAKE_INSTALL_LIBDIR:PATH=/app/lib"],
@@ -51,13 +35,17 @@
         },
         {
             "name": "supertuxkart",
-            "buildsystem": "cmake",
-            "config-opts": ["-DUSE_WIIUSE=0"],
+            "buildsystem": "cmake-ninja",
+            "config-opts": ["-DUSE_WIIUSE=0", "-DOpenGL_GL_PREFERENCE=LEGACY" ],
             "sources": [
                 {
                     "type": "archive",
                     "url": "https://downloads.sourceforge.net/project/supertuxkart/SuperTuxKart/0.9.3/supertuxkart-0.9.3-src.tar.xz",
                     "sha256": "d8014e7106ba84f98b5ec5f146249dcffc284fc4083f8f237ff420b9e2219cb0"
+                },
+                {
+                    "type": "patch",
+                    "path": "new-mesa.patch"
                 }
             ]
         }
