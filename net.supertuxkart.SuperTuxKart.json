@@ -1,6 +1,6 @@
 {
     "app-id": "net.supertuxkart.SuperTuxKart",
-    "default-branch": "stable",
+    "default-branch": "beta",
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "18.08",
     "sdk": "org.freedesktop.Sdk",
@@ -41,12 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/supertuxkart/SuperTuxKart/0.9.3/supertuxkart-0.9.3-src.tar.xz",
-                    "sha256": "d8014e7106ba84f98b5ec5f146249dcffc284fc4083f8f237ff420b9e2219cb0"
-                },
-                {
-                    "type": "patch",
-                    "path": "new-mesa.patch"
+                    "url": "https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.10-rc1/supertuxkart-0.10-rc1-src.tar.xz",
+                    "sha256": "2ddbd23dbb527573d0a2e7da6a4c65a654a5a1106937804b712f762cdb206230"
                 }
             ]
         }
