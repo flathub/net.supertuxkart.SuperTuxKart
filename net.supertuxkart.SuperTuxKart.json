@@ -41,12 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/supertuxkart/SuperTuxKart/0.9.3/supertuxkart-0.9.3-src.tar.xz",
-                    "sha256": "d8014e7106ba84f98b5ec5f146249dcffc284fc4083f8f237ff420b9e2219cb0"
-                },
-                {
-                    "type": "patch",
-                    "path": "new-mesa.patch"
+                    "url": "https://downloads.sourceforge.net/project/supertuxkart/SuperTuxKart/1.0/supertuxkart-1.0-src.tar.xz",
+                    "sha256": "6d88f43f0de5202766ba305c87e3d9843103e81d31b7193059286098d2a5d980"
                 }
             ]
         }
