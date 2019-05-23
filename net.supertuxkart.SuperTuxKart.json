@@ -8,10 +8,15 @@
     "rename-appdata-file": "supertuxkart.appdata.xml",
     "rename-icon": "supertuxkart",
     "command": "supertuxkart",
-    "finish-args": ["--share=ipc", "--socket=x11", "--socket=pulseaudio", "--share=network", "--device=all"],
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland",
+        "--socket=pulseaudio",
+        "--share=network",
+        "--device=all"
+    ],
     "build-options" : {
-        "cflags": "-O2",
-        "cxxflags": "-O2 -g",
         "env": {
             "V": "1"
         }
