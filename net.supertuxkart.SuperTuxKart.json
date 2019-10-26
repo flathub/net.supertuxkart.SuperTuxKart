@@ -48,6 +48,10 @@
                     "type": "archive",
                     "url": "https://downloads.sourceforge.net/project/supertuxkart/SuperTuxKart/1.0/supertuxkart-1.0-src.tar.xz",
                     "sha256": "6d88f43f0de5202766ba305c87e3d9843103e81d31b7193059286098d2a5d980"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-AppData-file.patch"
                 }
             ]
         }
