@@ -1,12 +1,13 @@
 diff --git a/data/supertuxkart.appdata.xml b/data/supertuxkart.appdata.xml
-index 11240dc45..2284e3a1c 100644
+index eeba75315..2743f41c0 100644
 --- a/data/supertuxkart.appdata.xml
 +++ b/data/supertuxkart.appdata.xml
-@@ -54,4 +54,8 @@
+@@ -54,4 +54,9 @@
      <content_attribute id="violence-cartoon">mild</content_attribute>
      <content_attribute id="social-chat">intense</content_attribute>
    </content_rating>
 +  <releases>
++    <release version="1.2" date="2020-08-27"/>
 +    <release version="1.1" date="2020-01-05"/>
 +    <release version="1.0" date="2019-04-21"/>
 +  </releases>
