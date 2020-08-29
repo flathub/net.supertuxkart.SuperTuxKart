@@ -52,6 +52,10 @@
                 {
                     "type": "patch",
                     "path": "fix-AppData-file.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "disable-largest-icon.patch"
                 }
             ]
         }
