@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 99b285dd6..c06c5c7b9 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -776,7 +776,7 @@ install(FILES data/supertuxkart_64.png DESTINATION share/icons/hicolor/64x64/app
+ install(FILES data/supertuxkart_128.png DESTINATION share/icons/hicolor/128x128/apps RENAME supertuxkart.png)
+ install(FILES data/supertuxkart_256.png DESTINATION share/icons/hicolor/256x256/apps RENAME supertuxkart.png)
+ install(FILES data/supertuxkart_512.png DESTINATION share/icons/hicolor/512x512/apps RENAME supertuxkart.png)
+-install(FILES data/supertuxkart_1024.png DESTINATION share/icons/hicolor/1024x1024/apps RENAME supertuxkart.png)
++#install(FILES data/supertuxkart_1024.png DESTINATION share/icons/hicolor/1024x1024/apps RENAME supertuxkart.png)
+ install(FILES data/supertuxkart_512.png DESTINATION share/pixmaps RENAME supertuxkart.png)
+ install(FILES data/supertuxkart.appdata.xml DESTINATION share/metainfo)
+ 

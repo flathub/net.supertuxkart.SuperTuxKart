@@ -46,12 +46,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/supertuxkart/SuperTuxKart/1.1/supertuxkart-1.1-src.tar.xz",
-                    "sha256": "e9b02b0b11ab68aacaec38306903feffe59a501224805cd3645cebf10e880ae8"
+                    "url": "https://downloads.sourceforge.net/project/supertuxkart/SuperTuxKart/1.2/SuperTuxKart-1.2-src.tar.xz",
+                    "sha256": "052edf0afdbeb99583fe8676fb0ab80ecb6103fb88b7540f858d1b5fa1297d37"
                 },
                 {
                     "type": "patch",
                     "path": "fix-AppData-file.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "disable-largest-icon.patch"
                 }
             ]
         }
