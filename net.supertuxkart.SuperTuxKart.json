@@ -2,7 +2,7 @@
     "app-id": "net.supertuxkart.SuperTuxKart",
     "default-branch": "stable",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "19.08",
+    "runtime-version": "20.08",
     "sdk": "org.freedesktop.Sdk",
     "rename-desktop-file": "supertuxkart.desktop",
     "rename-appdata-file": "supertuxkart.appdata.xml",
