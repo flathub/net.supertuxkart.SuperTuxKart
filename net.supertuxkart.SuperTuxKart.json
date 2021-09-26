@@ -1,17 +1,22 @@
 {
     "app-id": "net.supertuxkart.SuperTuxKart",
-    "default-branch": "beta",
+    "default-branch": "stable",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "18.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "rename-desktop-file": "supertuxkart.desktop",
     "rename-appdata-file": "supertuxkart.appdata.xml",
     "rename-icon": "supertuxkart",
     "command": "supertuxkart",
-    "finish-args": ["--share=ipc", "--socket=x11", "--socket=pulseaudio", "--share=network", "--device=all"],
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland",
+        "--socket=pulseaudio",
+        "--share=network",
+        "--device=all"
+    ],
     "build-options" : {
-        "cflags": "-O2",
-        "cxxflags": "-O2 -g",
         "env": {
             "V": "1"
         }
@@ -41,8 +46,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.10-rc1/supertuxkart-0.10-rc1-src.tar.xz",
-                    "sha256": "2ddbd23dbb527573d0a2e7da6a4c65a654a5a1106937804b712f762cdb206230"
+                    "url": "https://github.com/supertuxkart/stk-code/releases/download/1.3-rc1/SuperTuxKart-1.3-rc1-src.tar.xz",
+                    "sha256": "df24ce1390eb078457b143bd3ed21f31cb886ac5d2a5faf545a0175e666d4d33"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-AppData-file.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "disable-largest-icon.patch"
                 }
             ]
         }
