@@ -2,7 +2,7 @@
     "app-id": "net.supertuxkart.SuperTuxKart",
     "default-branch": "stable",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "20.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "rename-desktop-file": "supertuxkart.desktop",
     "rename-appdata-file": "supertuxkart.appdata.xml",
@@ -42,16 +42,16 @@
         {
             "name": "supertuxkart",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DUSE_WIIUSE=0", "-DOpenGL_GL_PREFERENCE=LEGACY" ],
+            "config-opts": ["-DUSE_WIIUSE=0" ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/supertuxkart/SuperTuxKart/1.2/SuperTuxKart-1.2-src.tar.xz",
-                    "sha256": "052edf0afdbeb99583fe8676fb0ab80ecb6103fb88b7540f858d1b5fa1297d37"
+                    "url": "https://github.com/supertuxkart/stk-code/releases/download/1.3/SuperTuxKart-1.3-src.tar.xz",
+                    "sha256": "eeabeb0d9801688a218f6f0a76ea3546a46a322ccaca9a258148ecacfe083ffd"
                 },
                 {
                     "type": "patch",
-                    "path": "fix-AppData-file.patch"
+                    "path": "fix-app-data-versioning.patch"
                 },
                 {
                     "type": "patch",
