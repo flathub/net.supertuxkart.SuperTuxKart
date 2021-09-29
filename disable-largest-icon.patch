@@ -8,6 +8,5 @@ index 99b285dd6..c06c5c7b9 100644
  install(FILES data/supertuxkart_512.png DESTINATION share/icons/hicolor/512x512/apps RENAME supertuxkart.png)
 -install(FILES data/supertuxkart_1024.png DESTINATION share/icons/hicolor/1024x1024/apps RENAME supertuxkart.png)
 +#install(FILES data/supertuxkart_1024.png DESTINATION share/icons/hicolor/1024x1024/apps RENAME supertuxkart.png)
- install(FILES data/supertuxkart_512.png DESTINATION share/pixmaps RENAME supertuxkart.png)
  install(FILES data/supertuxkart.appdata.xml DESTINATION share/metainfo)
  
