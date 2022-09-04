@@ -2,7 +2,7 @@
     "app-id": "net.supertuxkart.SuperTuxKart",
     "default-branch": "stable",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08",
+    "runtime-version": "22.08",
     "sdk": "org.freedesktop.Sdk",
     "rename-desktop-file": "supertuxkart.desktop",
     "rename-appdata-file": "supertuxkart.appdata.xml",
@@ -52,6 +52,10 @@
                 {
                     "type": "patch",
                     "path": "fix-app-data-versioning.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-app-data-screenshots.patch"
                 },
                 {
                     "type": "patch",
