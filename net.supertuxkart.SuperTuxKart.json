@@ -2,7 +2,7 @@
     "app-id": "net.supertuxkart.SuperTuxKart",
     "default-branch": "beta",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "22.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "rename-desktop-file": "supertuxkart.desktop",
     "rename-appdata-file": "supertuxkart.appdata.xml",
@@ -42,7 +42,7 @@
         {
             "name": "supertuxkart",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DUSE_WIIUSE=0" ],
+            "config-opts": ["-DUSE_WIIUSE=0", "-DOpenGL_GL_PREFERENCE=LEGACY" ],
             "sources": [
                 {
                     "type": "archive",
