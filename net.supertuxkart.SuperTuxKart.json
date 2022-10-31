@@ -55,10 +55,6 @@
                 },
                 {
                     "type": "patch",
-                    "path": "fix-app-data-screenshots.patch"
-                },
-                {
-                    "type": "patch",
                     "path": "disable-largest-icon.patch"
                 },
                 {
