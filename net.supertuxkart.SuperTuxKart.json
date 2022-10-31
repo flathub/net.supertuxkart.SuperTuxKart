@@ -47,7 +47,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/supertuxkart/stk-code/releases/download/1.4-rc1/SuperTuxKart-1.4-rc1-src.tar.xz",
-                    "sha256": "df24ce1390eb078457b143bd3ed21f31cb886ac5d2a5faf545a0175e666d4d33"
+                    "sha256": "cae7ce0b017b30065160a814772924015b7e5c040545d90101d4d8f797bfc637"
                 },
                 {
                     "type": "patch",
