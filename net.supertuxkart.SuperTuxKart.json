@@ -2,7 +2,7 @@
     "app-id": "net.supertuxkart.SuperTuxKart",
     "default-branch": "beta",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08",
+    "runtime-version": "22.08",
     "sdk": "org.freedesktop.Sdk",
     "rename-desktop-file": "supertuxkart.desktop",
     "rename-appdata-file": "supertuxkart.appdata.xml",
@@ -10,7 +10,7 @@
     "command": "supertuxkart",
     "finish-args": [
         "--share=ipc",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland",
         "--socket=pulseaudio",
         "--share=network",
@@ -42,16 +42,16 @@
         {
             "name": "supertuxkart",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DUSE_WIIUSE=0", "-DOpenGL_GL_PREFERENCE=LEGACY" ],
+            "config-opts": ["-DUSE_WIIUSE=0" ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/supertuxkart/stk-code/releases/download/1.3-rc1/SuperTuxKart-1.3-rc1-src.tar.xz",
-                    "sha256": "df24ce1390eb078457b143bd3ed21f31cb886ac5d2a5faf545a0175e666d4d33"
+                    "url": "https://github.com/supertuxkart/stk-code/releases/download/1.4/SuperTuxKart-1.4-src.tar.xz",
+                    "sha256": "9890392419baf4715313f14d5ad60746f276eed36eb580636caf44e2532c0f03"
                 },
                 {
                     "type": "patch",
-                    "path": "fix-AppData-file.patch"
+                    "path": "fix-app-data-versioning.patch"
                 },
                 {
                     "type": "patch",
