@@ -56,10 +56,6 @@
                 {
                     "type": "patch",
                     "path": "disable-largest-icon.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "update-cacert.patch"
                 }
             ]
         }
