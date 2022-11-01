@@ -1,6 +1,5 @@
 {
     "app-id": "net.supertuxkart.SuperTuxKart",
-    "default-branch": "stable",
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "22.08",
     "sdk": "org.freedesktop.Sdk",
