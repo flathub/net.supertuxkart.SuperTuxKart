@@ -14,7 +14,8 @@
 	"--share=ipc",
         "--socket=pulseaudio",
         "--share=network",
-        "--device=all"
+        "--device=all",
+	"--filesystem=xdg-run/app/com.discordapp.Discord:create"
     ],
     "build-options" : {
         "env": {
