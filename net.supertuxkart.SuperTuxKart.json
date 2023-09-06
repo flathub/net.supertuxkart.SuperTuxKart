@@ -56,6 +56,14 @@
                 {
                     "type": "patch",
                     "path": "disable-largest-icon.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "add-missing-gcc13-includes.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-gcc13-build.patch"
                 }
             ]
         }
