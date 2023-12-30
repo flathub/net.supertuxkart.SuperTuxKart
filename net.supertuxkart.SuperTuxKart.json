@@ -64,6 +64,10 @@
                 {
                     "type": "patch",
                     "path": "fix-gcc13-build.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-ai-karts.patch"
                 }
             ]
         }
