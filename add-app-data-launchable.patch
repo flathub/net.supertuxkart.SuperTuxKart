@@ -1,0 +1,12 @@
+diff --git a/data/supertuxkart.appdata.xml b/data/supertuxkart.appdata.xml
+index a57e6e1e4..4a83b565f 100644
+--- a/data/supertuxkart.appdata.xml
++++ b/data/supertuxkart.appdata.xml
+@@ -3,6 +3,7 @@
+   <id>supertuxkart.desktop</id>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>GPL-3.0+</project_license>
++  <launchable type="desktop-id">net.supertuxkart.SuperTuxKart.desktop</launchable>
+   <name>SuperTuxKart</name>
+   <summary>A 3D open-source kart racing game</summary>
+   <summary xml:lang="zh_TW">3D 開源卡丁車賽車遊戲</summary>

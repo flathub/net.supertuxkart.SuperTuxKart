@@ -55,6 +55,10 @@
                 },
                 {
                     "type": "patch",
+                    "path": "add-app-data-launchable.patch"
+                },
+                {
+                    "type": "patch",
                     "path": "disable-largest-icon.patch"
                 },
                 {
