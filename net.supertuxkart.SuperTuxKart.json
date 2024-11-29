@@ -9,12 +9,13 @@
     "rename-icon": "supertuxkart",
     "command": "supertuxkart",
     "finish-args": [
-        "--share=ipc",
-        "--socket=fallback-x11",
         "--socket=wayland",
+        "--socket=fallback-x11",
+        "--share=ipc",
         "--socket=pulseaudio",
         "--share=network",
-        "--device=all"
+        "--device=all",
+        "--filesystem=xdg-run/app/com.discordapp.Discord:create"
     ],
     "build-options" : {
         "env": {
@@ -27,6 +28,7 @@
                 "/share/vala",
                 "*.la", "*.a"],
     "modules": [
+        "shared-modules/SDL2/SDL2-2.26.1-with-libdecor.json",
         {
             "name": "libopenglrecorder",
             "buildsystem": "cmake",
