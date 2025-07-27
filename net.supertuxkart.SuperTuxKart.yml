@@ -1,0 +1,49 @@
+app-id: net.supertuxkart.SuperTuxKart
+runtime: org.freedesktop.Platform
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+rename-desktop-file: supertuxkart.desktop
+rename-appdata-file: supertuxkart.appdata.xml
+rename-icon: supertuxkart
+command: supertuxkart
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --socket=pulseaudio
+  - --share=network
+  - --device=all
+build-options:
+  env:
+    V: 1
+cleanup:
+  - '/include'
+  - '/lib/pkgconfig'
+  - '/share/pkgconfig'
+  - '/share/aclocal'
+  - '/man'
+  - '/share/man'
+  - '/share/gtk-doc'
+  - '/share/vala'
+  - '*.la'
+  - '*.a'
+modules:
+  - name: libopenglrecorder
+    buildsystem: cmake
+    config-opts:
+      - -DCMAKE_INSTALL_LIBDIR:PATH=/app/lib
+    sources:
+      - type: git
+        url: https://github.com/Benau/libopenglrecorder.git
+        tag: v0.1.0
+        commit: 15b1958a073b89cdd01b2532152c6be5f0b93c13
+  - name: supertuxkart
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DUSE_WIIUSE=0
+    sources:
+      - type: archive
+        url: https://github.com/supertuxkart/stk-code/releases/download/1.5-rc1/SuperTuxKart-1.5-rc1-src.tar.gz
+        sha256: ec92c925a4a5b143f0b6deb9609a0af3258db712aef036f2d0dd461fa6b325ef
+      - type: patch
+        path: disable-largest-icon.patch
