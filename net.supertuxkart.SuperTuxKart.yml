@@ -13,9 +13,6 @@ finish-args:
   - --socket=pulseaudio
   - --share=network
   - --device=all
-build-options:
-  env:
-    V: 1
 cleanup:
   - '/include'
   - '/lib/pkgconfig'
