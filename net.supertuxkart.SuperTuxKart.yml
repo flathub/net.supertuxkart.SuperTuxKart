@@ -42,4 +42,6 @@ modules:
         url: https://github.com/supertuxkart/stk-code/releases/download/1.5-rc1/SuperTuxKart-1.5-rc1-src.tar.gz
         sha256: ec92c925a4a5b143f0b6deb9609a0af3258db712aef036f2d0dd461fa6b325ef
       - type: patch
-        path: disable-largest-icon.patch
+        paths:
+          - disable-largest-icon.patch
+          - fix-app-data-versioning.patch
