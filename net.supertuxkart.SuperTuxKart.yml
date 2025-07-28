@@ -3,7 +3,6 @@ runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 rename-desktop-file: supertuxkart.desktop
-rename-appdata-file: supertuxkart.appdata.xml
 rename-icon: supertuxkart
 command: supertuxkart
 finish-args:
