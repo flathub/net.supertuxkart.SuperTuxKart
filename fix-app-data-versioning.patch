@@ -1,0 +1,14 @@
+diff --git a/data/po/update_desktop_file_appdata.py b/data/po/update_desktop_file_appdata.py
+index d5619098b..905b9ae9e 100755
+--- a/data/po/update_desktop_file_appdata.py
++++ b/data/po/update_desktop_file_appdata.py
+@@ -130,6 +130,9 @@ STK_APPDATA_FILE_5 = """  </description>
+     <content_attribute id=\"social-chat\">intense</content_attribute>
+   </content_rating>
+   <releases>
++    <release version="1.5-rc1" date="2025-05-27">
++      <url>https://blog.supertuxkart.net/2025/05/release-candidate-for-supertuxkart-15.html</url>
++    </release>
+     <release version="1.4" date="2022-10-31">
+       <url>https://blog.supertuxkart.net/2022/11/supertuxkart-14-release.html</url>
+     </release>
