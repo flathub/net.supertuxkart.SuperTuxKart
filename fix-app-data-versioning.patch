@@ -1,3 +1,17 @@
+diff --git a/data/net.supertuxkart.SuperTuxKart.metainfo.xml b/data/net.supertuxkart.SuperTuxKart.metainfo.xml
+index baea4df30..16781f84e 100644
+--- a/data/net.supertuxkart.SuperTuxKart.metainfo.xml
++++ b/data/net.supertuxkart.SuperTuxKart.metainfo.xml
+@@ -434,6 +434,9 @@
+     <content_attribute id="social-chat">intense</content_attribute>
+   </content_rating>
+   <releases>
++    <release version="1.5-rc1" date="2025-05-27">
++      <url>https://blog.supertuxkart.net/2025/05/release-candidate-for-supertuxkart-15.html</url>
++    </release>
+     <release version="1.4" date="2022-10-31">
+       <url>https://blog.supertuxkart.net/2022/11/supertuxkart-14-release.html</url>
+     </release>
 diff --git a/data/po/update_desktop_file_appdata.py b/data/po/update_desktop_file_appdata.py
 index d5619098b..905b9ae9e 100755
 --- a/data/po/update_desktop_file_appdata.py
