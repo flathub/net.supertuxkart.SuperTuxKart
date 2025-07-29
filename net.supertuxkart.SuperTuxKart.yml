@@ -1,4 +1,5 @@
 app-id: net.supertuxkart.SuperTuxKart
+default-branch: beta
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
