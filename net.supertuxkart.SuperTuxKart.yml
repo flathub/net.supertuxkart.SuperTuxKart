@@ -53,4 +53,5 @@ modules:
           - patches/fix-gcc13-build.patch
           - patches/fix-ai-karts.patch
           - patches/fix-gcc15-build.patch
+          - patches/fix-gcc15-build-2.patch
           - patches/cmake.patch
