@@ -46,10 +46,10 @@ modules:
         sha256: 9890392419baf4715313f14d5ad60746f276eed36eb580636caf44e2532c0f03
       - type: patch
         paths:
-          - fix-app-data-versioning.patch
-          - add-app-data-launchable.patch
-          - disable-largest-icon.patch
-          - add-missing-gcc13-includes.patch
-          - fix-gcc13-build.patch
-          - fix-ai-karts.patch
-          - cmake.patch
+          - patches/fix-app-data-versioning.patch
+          - patches/add-app-data-launchable.patch
+          - patches/disable-largest-icon.patch
+          - patches/add-missing-gcc13-includes.patch
+          - patches/fix-gcc13-build.patch
+          - patches/fix-ai-karts.patch
+          - patches/cmake.patch
