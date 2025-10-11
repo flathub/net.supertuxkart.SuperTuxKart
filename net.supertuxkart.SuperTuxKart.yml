@@ -52,4 +52,5 @@ modules:
           - patches/add-missing-gcc13-includes.patch
           - patches/fix-gcc13-build.patch
           - patches/fix-ai-karts.patch
+          - patches/fix-gcc15-build.patch
           - patches/cmake.patch
