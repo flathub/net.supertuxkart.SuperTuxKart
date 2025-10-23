@@ -25,9 +25,10 @@ cleanup:
   - '*.a'
 modules:
   - name: libopenglrecorder
-    buildsystem: cmake
+    buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_INSTALL_LIBDIR:PATH=/app/lib
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     sources:
       - type: git
         url: https://github.com/Benau/libopenglrecorder.git
