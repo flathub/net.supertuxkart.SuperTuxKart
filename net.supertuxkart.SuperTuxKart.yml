@@ -1,9 +1,8 @@
-app-id: net.supertuxkart.SuperTuxKart
+id: net.supertuxkart.SuperTuxKart
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 rename-desktop-file: supertuxkart.desktop
-rename-appdata-file: supertuxkart.appdata.xml
 rename-icon: supertuxkart
 command: supertuxkart
 finish-args:
@@ -13,9 +12,6 @@ finish-args:
   - --socket=pulseaudio
   - --share=network
   - --device=all
-build-options:
-  env:
-    V: 1
 cleanup:
   - '/include'
   - '/lib/pkgconfig'
@@ -33,22 +29,20 @@ modules:
     config-opts:
       - -DCMAKE_INSTALL_LIBDIR:PATH=/app/lib
     sources:
-      - type: archive
-        url: https://github.com/Benau/libopenglrecorder/archive/v0.1.0.tar.gz
-        sha256: a90a99c23f868636f77003a8dc6ffe6c3699fc2759c47df5dbd44ff8b42d2e4f
+      - type: git
+        url: https://github.com/Benau/libopenglrecorder.git
+        tag: v0.1.0
+        commit: 15b1958a073b89cdd01b2532152c6be5f0b93c13
+
   - name: supertuxkart
     buildsystem: cmake-ninja
     config-opts:
       - -DUSE_WIIUSE=0
     sources:
       - type: archive
-        url: https://github.com/supertuxkart/stk-code/releases/download/1.4/SuperTuxKart-1.4-src.tar.xz
-        sha256: 9890392419baf4715313f14d5ad60746f276eed36eb580636caf44e2532c0f03
+        url: https://github.com/supertuxkart/stk-code/releases/download/1.5/SuperTuxKart-1.5-src.tar.gz
+        sha256: 33cf8841e4ff4082d80b9248014295bbbea61d14683e86dff100e3ab8f7b27cb
       - type: patch
         paths:
-          - fix-app-data-versioning.patch
-          - add-app-data-launchable.patch
+          - add-appstream-releases.patch
           - disable-largest-icon.patch
-          - add-missing-gcc13-includes.patch
-          - fix-gcc13-build.patch
-          - fix-ai-karts.patch
