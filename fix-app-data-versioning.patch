@@ -1,5 +1,5 @@
 diff --git a/data/net.supertuxkart.SuperTuxKart.metainfo.xml b/data/net.supertuxkart.SuperTuxKart.metainfo.xml
-index 78f3446..e0cd4ba 100644
+index 78f3446..440de49 100644
 --- a/data/net.supertuxkart.SuperTuxKart.metainfo.xml
 +++ b/data/net.supertuxkart.SuperTuxKart.metainfo.xml
 @@ -433,6 +433,23 @@
@@ -10,7 +10,7 @@ index 78f3446..e0cd4ba 100644
 +    <release version="1.5" date="2025-10-20">
 +      <url>https://blog.supertuxkart.net/2025/10/supertuxkart-15-release.html</url>
 +    </release>
-+    <release version="1.5-rc1" date="2025-05-27">
++    <release version="1.5~rc1" date="2025-05-27">
 +      <url>https://blog.supertuxkart.net/2025/05/release-candidate-for-supertuxkart-15.html</url>
 +    </release>
 +    <release version="1.4" date="2022-10-31">
