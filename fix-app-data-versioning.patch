@@ -1,8 +1,8 @@
 diff --git a/data/net.supertuxkart.SuperTuxKart.metainfo.xml b/data/net.supertuxkart.SuperTuxKart.metainfo.xml
-index 78f344699..2007b0be8 100644
+index 78f3446..e0cd4ba 100644
 --- a/data/net.supertuxkart.SuperTuxKart.metainfo.xml
 +++ b/data/net.supertuxkart.SuperTuxKart.metainfo.xml
-@@ -433,6 +433,20 @@
+@@ -433,6 +433,23 @@
      <content_attribute id="violence-cartoon">mild</content_attribute>
      <content_attribute id="social-chat">intense</content_attribute>
    </content_rating>
