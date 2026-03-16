@@ -1,7 +1,7 @@
 id: net.supertuxkart.SuperTuxKart
 default-branch: beta
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 rename-desktop-file: supertuxkart.desktop
 rename-icon: supertuxkart
@@ -26,9 +26,10 @@ cleanup:
   - '*.a'
 modules:
   - name: libopenglrecorder
-    buildsystem: cmake
+    buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_INSTALL_LIBDIR:PATH=/app/lib
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     sources:
       - type: git
         url: https://github.com/Benau/libopenglrecorder.git
@@ -41,8 +42,8 @@ modules:
       - -DUSE_WIIUSE=0
     sources:
       - type: archive
-        url: https://github.com/supertuxkart/stk-code/releases/download/1.5-rc1/SuperTuxKart-1.5-rc1-src.tar.gz
-        sha256: ec92c925a4a5b143f0b6deb9609a0af3258db712aef036f2d0dd461fa6b325ef
+        url: https://github.com/supertuxkart/stk-code/releases/download/1.5/SuperTuxKart-1.5-src.tar.gz
+        sha256: 33cf8841e4ff4082d80b9248014295bbbea61d14683e86dff100e3ab8f7b27cb
       - type: patch
         paths:
           - disable-largest-icon.patch
